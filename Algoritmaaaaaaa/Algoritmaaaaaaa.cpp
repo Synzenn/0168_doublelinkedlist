@@ -3,5 +3,7 @@
 using namespace std;
 
 struct Node{
+	string name;
+	int noMhs;
 
 };
