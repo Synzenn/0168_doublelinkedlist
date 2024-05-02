@@ -19,6 +19,9 @@ void addNode(){
 	cin >> newNode->name;
 
 	if (START == NULL  || newNode -> noMhs == START->noMhs){
+		if (START != NULL && newNode->noMhs == START->noMhs) {
+
+		}
 	}
 }
 
