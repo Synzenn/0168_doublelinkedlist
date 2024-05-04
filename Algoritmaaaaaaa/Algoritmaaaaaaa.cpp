@@ -124,3 +124,9 @@ bool listempty()
     return (START == NULL);
 }
 
+void traverse()
+{
+   
+}
+
+
