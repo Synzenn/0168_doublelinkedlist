@@ -31,7 +31,31 @@ void addNode(){
 		START = newNode;
 	}
 	else {
+		Node* current = START;
+		Node* previous = NULL;
 
+		while (current != NULL && current->noMhs < newNode->noMhs) {
+			previous = current;
+			current = current->next;
+		}
+
+		newNode->next = current;
+		newNode->prev = previous;
+
+		if (current != NULL) {
+			current->prev = newNode;
+		}
+		if (current != NULL) {
+			current->next = newNode;
+		}
+		else{
+			START = newNode;
+		}
 	}
+}
+
+bool search(int rollNo, Node** previous, Node** current)
+{
+    
 }
 
